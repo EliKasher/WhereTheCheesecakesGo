@@ -1,0 +1,276 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/dialogue_manager/dialogue_resource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+resource_version = 30
+syntax_version = 2
+raw_text = "~ demo
+do _factory_guy_out()
+do _serious()
+Bakery Lady: We don't have that... [speed=0.2]thing.
+do _surprised()
+Nikola: What is happening?
+
+do _bakery_lady_out()
+do _soul_down()
+Mystical Voice: Your soul goes down
+	
+do _serious()
+You found an old piece of paper with what seems to be a [speed=0.2]cheesecake?
+do _surprised()
+Nikola: This is a clue!
+
+do _soul_up()
+Mystical Voice: Your soul goes up
+
+do _factory_guy_in()
+'Cheesecake' Factory Employee: Whats a cheescake? We only do Kuchens
+Nikola: What!!?
+
+do _soul_down()
+do _soul_down()"
+errors = [  ]
+titles = {
+"demo": "1"
+}
+lines = {
+"0": {
+"next_id": "1",
+"text": "demo",
+"type": "title"
+},
+"1": {
+"mutation": {
+"expression": [ {
+"function": "_factory_guy_out",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "2",
+"type": "mutation"
+},
+"11": {
+"mutation": {
+"expression": [ {
+"function": "_serious",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "12",
+"type": "mutation"
+},
+"12": {
+"character": "",
+"inline_mutations": [  ],
+"next_id": "13",
+"pauses": {
+},
+"replacements": [  ],
+"speeds": [ [ 56, 0.2 ] ],
+"text": "You found an old piece of paper with what seems to be a cheesecake?",
+"time": null,
+"translation_key": "You found an old piece of paper with what seems to be a cheesecake?",
+"type": "dialogue"
+},
+"13": {
+"mutation": {
+"expression": [ {
+"function": "_surprised",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "14",
+"type": "mutation"
+},
+"14": {
+"character": "Nikola",
+"character_replacements": [  ],
+"inline_mutations": [  ],
+"next_id": "16",
+"pauses": {
+},
+"replacements": [  ],
+"speeds": [  ],
+"text": "This is a clue!",
+"time": null,
+"translation_key": "This is a clue!",
+"type": "dialogue"
+},
+"16": {
+"mutation": {
+"expression": [ {
+"function": "_soul_up",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "17",
+"type": "mutation"
+},
+"17": {
+"character": "Mystical Voice",
+"character_replacements": [  ],
+"inline_mutations": [  ],
+"next_id": "19",
+"pauses": {
+},
+"replacements": [  ],
+"speeds": [  ],
+"text": "Your soul goes up",
+"time": null,
+"translation_key": "Your soul goes up",
+"type": "dialogue"
+},
+"19": {
+"mutation": {
+"expression": [ {
+"function": "_factory_guy_in",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "20",
+"type": "mutation"
+},
+"2": {
+"mutation": {
+"expression": [ {
+"function": "_serious",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "3",
+"type": "mutation"
+},
+"20": {
+"character": "'Cheesecake' Factory Employee",
+"character_replacements": [  ],
+"inline_mutations": [  ],
+"next_id": "21",
+"pauses": {
+},
+"replacements": [  ],
+"speeds": [  ],
+"text": "Whats a cheescake? We only do Kuchens",
+"time": null,
+"translation_key": "Whats a cheescake? We only do Kuchens",
+"type": "dialogue"
+},
+"21": {
+"character": "Nikola",
+"character_replacements": [  ],
+"inline_mutations": [  ],
+"next_id": "23",
+"pauses": {
+},
+"replacements": [  ],
+"speeds": [  ],
+"text": "What!!?",
+"time": null,
+"translation_key": "What!!?",
+"type": "dialogue"
+},
+"23": {
+"mutation": {
+"expression": [ {
+"function": "_soul_down",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "24",
+"type": "mutation"
+},
+"24": {
+"mutation": {
+"expression": [ {
+"function": "_soul_down",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "",
+"type": "mutation"
+},
+"3": {
+"character": "Bakery Lady",
+"character_replacements": [  ],
+"inline_mutations": [  ],
+"next_id": "4",
+"pauses": {
+},
+"replacements": [  ],
+"speeds": [ [ 22, 0.2 ] ],
+"text": "We don't have that... thing.",
+"time": null,
+"translation_key": "We don't have that... thing.",
+"type": "dialogue"
+},
+"4": {
+"mutation": {
+"expression": [ {
+"function": "_surprised",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "5",
+"type": "mutation"
+},
+"5": {
+"character": "Nikola",
+"character_replacements": [  ],
+"inline_mutations": [  ],
+"next_id": "7",
+"pauses": {
+},
+"replacements": [  ],
+"speeds": [  ],
+"text": "What is happening?",
+"time": null,
+"translation_key": "What is happening?",
+"type": "dialogue"
+},
+"7": {
+"mutation": {
+"expression": [ {
+"function": "_bakery_lady_out",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "8",
+"type": "mutation"
+},
+"8": {
+"mutation": {
+"expression": [ {
+"function": "_soul_down",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "9",
+"type": "mutation"
+},
+"9": {
+"character": "Mystical Voice",
+"character_replacements": [  ],
+"inline_mutations": [  ],
+"next_id": "11",
+"pauses": {
+},
+"replacements": [  ],
+"speeds": [  ],
+"text": "Your soul goes down",
+"time": null,
+"translation_key": "Your soul goes down",
+"type": "dialogue"
+}
+}
