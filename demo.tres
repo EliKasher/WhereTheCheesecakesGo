@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 30
+resource_version = 29
 syntax_version = 2
 raw_text = "~ demo
 do _factory_guy_out()
@@ -27,6 +27,7 @@ Mystical Voice: Your soul goes up
 
 do _factory_guy_in()
 'Cheesecake' Factory Employee: Whats a cheescake? We only do Kuchens
+do _surprised()
 Nikola: What!!?
 
 do _soul_down()
@@ -163,10 +164,21 @@ lines = {
 "type": "dialogue"
 },
 "21": {
+"mutation": {
+"expression": [ {
+"function": "_surprised",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "22",
+"type": "mutation"
+},
+"22": {
 "character": "Nikola",
 "character_replacements": [  ],
 "inline_mutations": [  ],
-"next_id": "23",
+"next_id": "24",
 "pauses": {
 },
 "replacements": [  ],
@@ -176,7 +188,7 @@ lines = {
 "translation_key": "What!!?",
 "type": "dialogue"
 },
-"23": {
+"24": {
 "mutation": {
 "expression": [ {
 "function": "_soul_down",
@@ -184,10 +196,10 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "24",
+"next_id": "25",
 "type": "mutation"
 },
-"24": {
+"25": {
 "mutation": {
 "expression": [ {
 "function": "_soul_down",

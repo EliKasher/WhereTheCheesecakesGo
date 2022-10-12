@@ -159,3 +159,5 @@ func _on_Balloon_gui_input(event):
 		next(dialogue.next_id)
 	elif event.is_action_pressed("ui_accept") and balloon.get_focus_owner() == balloon:
 		next(dialogue.next_id)
+
+

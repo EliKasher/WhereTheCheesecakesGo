@@ -1,8 +1,7 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://first_scene.gd" type="Script" id=1]
 [ext_resource path="res://scenes/soul.tscn" type="PackedScene" id=2]
-[ext_resource path="res://dialogue.gd" type="Script" id=3]
 [ext_resource path="res://scenes/fondo_demo.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/characters/bakery_lady/sad.png" type="Texture" id=5]
 [ext_resource path="res://Assets/characters/factory_guy/4_thinking.png" type="Texture" id=6]
@@ -20,11 +19,7 @@ margin_bottom = 70.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 0, -1 )
-current = true
 zoom = Vector2( 0.5, 0.5 )
-
-[node name="Dialogue" type="CanvasLayer" parent="."]
-script = ExtResource( 3 )
 
 [node name="Background" parent="." instance=ExtResource( 4 )]
 
@@ -32,6 +27,9 @@ script = ExtResource( 3 )
 position = Vector2( -300, 0 )
 scale = Vector2( 0.3, 0.3 )
 script = ExtResource( 9 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Texture" type="Sprite" parent="Detective"]
 texture = ExtResource( 7 )
@@ -42,6 +40,9 @@ scale = Vector2( 0.4, 0.4 )
 
 [node name="Texture" type="Sprite" parent="BakeryLady"]
 texture = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="FactoryGuy" type="Node2D" parent="."]
 position = Vector2( 300, 50 )
