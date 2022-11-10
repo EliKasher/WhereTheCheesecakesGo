@@ -1,9 +1,8 @@
 extends Node2D
 
-var serious_expression = preload("res://Assets/characters/nikola/1.png")
-var sad_expression = preload("res://Assets/characters/nikola/6.png")
-var surprised_expression = preload("res://Assets/characters/nikola/8.png")
-var happy_expression = preload("res://Assets/characters/nikola/11.png")
+var happy_expression = preload("res://Assets/media/nikola.png")
+var sad_expression = preload("res://Assets/media/nikola_sad.png")
+var surprised_expression = preload("res://Assets/media/nikola_surprised.png")
 
 
 func _ready():
@@ -27,9 +26,6 @@ func _soul_down():
 	if(Game.soul <= 0):
 		get_tree().change_scene("res://scenes/game_over.tscn")
 
-func _serious():
-	Game.expression = serious_expression
-
 func _happy():
 	Game.expression = happy_expression
 	
@@ -43,7 +39,7 @@ func _bakery_lady_out():
 	$BakeryLady/Texture.visible = false
 
 func _factory_guy_out():
-	$FactoryGuy.get_node("Texture").visible = false
+	$FactoryGuy.visible = false
 
 func _factory_guy_in():
-	$FactoryGuy.get_node("Texture").visible = true
+	$FactoryGuy.visible = true

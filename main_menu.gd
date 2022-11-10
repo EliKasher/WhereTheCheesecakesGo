@@ -10,7 +10,7 @@ func _ready():
 	play.connect("pressed", self, "_on_play_pressed")
 
 func _on_play_pressed():
-	get_tree().change_scene("res://scenes/first_scene.tscn")
+	get_tree().change_scene("res://scenes/introduction.tscn")
 	
 func _on_exit_pressed():
 	get_tree().quit()

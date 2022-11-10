@@ -1,15 +1,11 @@
-extends MarginContainer
+extends Node2D
 
-
-onready var resume = $VBoxContainer/Resume
-onready var main_menu = $VBoxContainer/MainMenu
-onready var exit = $VBoxContainer/Exit
-
+onready var pause = $MarginContainer/VBoxContainer/Pause
+onready var main_menu = $MarginContainer/VBoxContainer/MainMenu
 
 func _ready():
-	resume.connect("pressed", self, "_on_resume_pressed")
+	pause.connect("pressed", self, "_on_pause_pressed")
 	main_menu.connect("pressed", self, "_on_main_menu_pressed")
-	exit.connect("pressed", self, "_on_exit_pressed")
 	visible = false
 
 func _input(event):
@@ -17,13 +13,11 @@ func _input(event):
 		visible = !visible
 		get_tree().paused = visible
 
-func _on_resume_pressed():
-	get_tree().paused = false
+func _on_pause_pressed():
+	get_tree().pause = false
 	visible = false
 
 func _on_main_menu_pressed():
 	get_tree().change_scene("res://scenes/main_menu.tscn")
 	get_tree().paused = false
-	
-func _on_exit_pressed():
-	get_tree().quit()
+
