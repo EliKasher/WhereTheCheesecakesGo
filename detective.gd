@@ -1,12 +1,10 @@
-extends Node2D
-
-onready var actual_expression = $Texture
+extends Sprite
 
 func _ready():
-	Game.connect("expression_changed", self, "_on_expression_changed")
-	_on_expression_changed(Game.expression)
+	Game.connect("nikola_expression_changed", self, "_on_nikola_expression_changed")
+	_on_nikola_expression_changed(Game.nikola_expression)
 	
-func _on_expression_changed(value):
-	actual_expression.texture = value
+func _on_nikola_expression_changed(value):
+	texture = value
 
 	
