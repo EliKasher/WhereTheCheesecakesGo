@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 50
+resource_version = 54
 syntax_version = 2
 raw_text = "~ intro
 do _mom_out()
@@ -60,7 +60,7 @@ do _change_background(\"res://Assets/media/intro/fotograma0447.png\")
 Nikola: Well, for some reason, there seems to be no cheesecakes in this city, so I came to the only place that...
 Nikola: [speed=0.5]...
 
-Nikola stops talking, he noticed the worker had a hat with the name Kuchen Factory on it.
+Mystical Voice: Nikola stops talking, he noticed the worker had a hat with the name Kuchen Factory on it.
 
 Nikola: Sorry, What do you sell here?
 'Cheesecake' Factory Employee: Well, I mean kuchens *laughs*.
@@ -92,25 +92,24 @@ do _soul_bar_in()
 do _nikola_in()
 
 Mystical Voice: Nikola awakes, he has two options.
-- Forget the cheesecakes forever.
-	 => forget_cheesecakes
-- Investigate the dissapearence of the cheesecakes. 
-	=> chapter_1
+- Forget the cheesecakes forever. => forget
+- Investigate the dissapearence of the cheesecakes. => one
 
-~ forget_cheesecakes
+~ forget
 Mystical Voice: You lost.
 do _soul_down()
 do _soul_down()
 do _soul_down()
 do _soul_down()
 
-~ chapter_1
-Nikola: I need to go to the station! "
+~ one
+Nikola: I need to go to the station! 
+do _soul_bar_out()"
 errors = [  ]
 titles = {
-"chapter_1": "99",
-"forget_cheesecakes": "92",
-"intro": "1"
+"forget": "90",
+"intro": "1",
+"one": "97"
 }
 lines = {
 "0": {
@@ -670,7 +669,8 @@ lines = {
 "type": "dialogue"
 },
 "54": {
-"character": "",
+"character": "Mystical Voice",
+"character_replacements": [  ],
 "inline_mutations": [  ],
 "next_id": "56",
 "pauses": {
@@ -1057,21 +1057,16 @@ lines = {
 "type": "dialogue"
 },
 "86": {
-"next_id": "87",
+"next_id": "90",
 "next_id_after": "end!",
 "replacements": [  ],
-"responses": PoolStringArray( "86", "88" ),
+"responses": PoolStringArray( "86", "87" ),
 "text": "Forget the cheesecakes forever.",
 "translation_key": "Forget the cheesecakes forever.",
 "type": "response"
 },
 "87": {
-"next_id": "92",
-"parent_id": "86",
-"type": "goto"
-},
-"88": {
-"next_id": "89",
+"next_id": "97",
 "next_id_after": "end!",
 "replacements": [  ],
 "text": "Investigate the dissapearence of the cheesecakes.",
@@ -1079,20 +1074,15 @@ lines = {
 "type": "response"
 },
 "89": {
-"next_id": "99",
-"parent_id": "88",
-"type": "goto"
-},
-"91": {
-"next_id": "92",
-"text": "forget_cheesecakes",
+"next_id": "90",
+"text": "forget",
 "type": "title"
 },
-"92": {
+"90": {
 "character": "Mystical Voice",
 "character_replacements": [  ],
 "inline_mutations": [  ],
-"next_id": "93",
+"next_id": "91",
 "pauses": {
 },
 "replacements": [  ],
@@ -1101,6 +1091,28 @@ lines = {
 "time": null,
 "translation_key": "You lost.",
 "type": "dialogue"
+},
+"91": {
+"mutation": {
+"expression": [ {
+"function": "_soul_down",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "92",
+"type": "mutation"
+},
+"92": {
+"mutation": {
+"expression": [ {
+"function": "_soul_down",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "93",
+"type": "mutation"
 },
 "93": {
 "mutation": {
@@ -1121,41 +1133,19 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "95",
-"type": "mutation"
-},
-"95": {
-"mutation": {
-"expression": [ {
-"function": "_soul_down",
-"type": "function",
-"value": [  ]
-} ]
-},
-"next_id": "96",
+"next_id": "",
 "type": "mutation"
 },
 "96": {
-"mutation": {
-"expression": [ {
-"function": "_soul_down",
-"type": "function",
-"value": [  ]
-} ]
-},
-"next_id": "",
-"type": "mutation"
-},
-"98": {
-"next_id": "99",
-"text": "chapter_1",
+"next_id": "97",
+"text": "one",
 "type": "title"
 },
-"99": {
+"97": {
 "character": "Nikola",
 "character_replacements": [  ],
 "inline_mutations": [  ],
-"next_id": "",
+"next_id": "98",
 "pauses": {
 },
 "replacements": [  ],
@@ -1164,5 +1154,16 @@ lines = {
 "time": null,
 "translation_key": "I need to go to the station!",
 "type": "dialogue"
+},
+"98": {
+"mutation": {
+"expression": [ {
+"function": "_soul_bar_out",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "",
+"type": "mutation"
 }
 }

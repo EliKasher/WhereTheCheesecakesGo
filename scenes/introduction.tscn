@@ -13,18 +13,18 @@ position = Vector2( 45, 379 )
 script = ExtResource( 2 )
 
 [node name="Backgrounds" type="CanvasLayer" parent="."]
-layer = 0
 script = ExtResource( 20 )
 
 [node name="Background" type="Sprite" parent="Backgrounds"]
-position = Vector2( 510, 226.281 )
-scale = Vector2( 0.424668, 0.386198 )
+position = Vector2( 517.719, 222.86 )
+scale = Vector2( 0.43053, 0.378099 )
 texture = ExtResource( 18 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Characters" type="CanvasLayer" parent="."]
+layer = 22
 
 [node name="Nikola" type="Sprite" parent="Characters"]
 position = Vector2( 217, 523 )
@@ -38,11 +38,21 @@ scale = Vector2( 0.0907812, 0.105195 )
 texture = ExtResource( 1 )
 
 [node name="SoulBar" type="CanvasLayer" parent="."]
+layer = 2
 
 [node name="Soul" parent="SoulBar" instance=ExtResource( 4 )]
-margin_left = -19.0
-margin_right = 401.0
-margin_bottom = 70.0
+margin_left = 7.0
+margin_top = 13.0
+margin_right = 427.0
+margin_bottom = 83.0
 __meta__ = {
 "_edit_group_": true
 }
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 0
+
+[node name="Fotograma0000" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 535, 599 )
+scale = Vector2( 0.481255, 0.420599 )
+texture = ExtResource( 18 )

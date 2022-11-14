@@ -14,11 +14,8 @@ __meta__ = {
 }
 
 [node name="Detective" type="Node2D" parent="."]
-position = Vector2( 318, 627 )
+position = Vector2( 345, 552 )
 scale = Vector2( 0.3, 0.3 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Texture" type="Sprite" parent="Detective"]
 position = Vector2( -398, -613.333 )
