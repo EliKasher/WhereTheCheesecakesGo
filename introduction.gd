@@ -6,10 +6,7 @@ func _ready():
 
 func _load_dialogues():
 	var resource = load("res://intro.tres")
-	Interface.show_dialogue(\
-	"intro", \
-	resource
-	)
+	DialogueManager.show_example_dialogue_balloon("intro", resource)
 
 func _change_background(background):
 	Game.background = load(background)
