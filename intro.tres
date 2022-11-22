@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 54
+resource_version = 67
 syntax_version = 2
 raw_text = "~ intro
 do _mom_out()
@@ -12,6 +12,7 @@ do _nikola_out()
 do _soul_bar_out()
 do _change_background(\"res://Assets/media/intro/fotograma0003.png\")
 do _change_background(\"res://Assets/media/intro/fotograma0030.png\")
+
 Nikola: I live in the city of Chimera.
 Nikola: A not so well known city in the state of New York.
 Nikola: I'm a detective and my name is Nikola.
@@ -107,9 +108,9 @@ Nikola: I need to go to the station!
 do _soul_bar_out()"
 errors = [  ]
 titles = {
-"forget": "90",
+"forget": "91",
 "intro": "1",
-"one": "97"
+"one": "98"
 }
 lines = {
 "0": {
@@ -128,7 +129,7 @@ lines = {
 "next_id": "2",
 "type": "mutation"
 },
-"10": {
+"11": {
 "mutation": {
 "expression": [ {
 "function": "_change_background",
@@ -139,38 +140,28 @@ lines = {
 } ] ]
 } ]
 },
-"next_id": "11",
-"type": "mutation"
-},
-"11": {
-"character": "Nikola",
-"character_replacements": [  ],
-"inline_mutations": [  ],
 "next_id": "12",
-"pauses": {
-},
-"replacements": [  ],
-"speeds": [  ],
-"text": "This city is cruel and difficult to live in.",
-"time": null,
-"translation_key": "This city is cruel and difficult to live in.",
-"type": "dialogue"
+"type": "mutation"
 },
 "12": {
 "character": "Nikola",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "14",
-"pauses": {
-},
+"next_id": "13",
 "replacements": [  ],
-"speeds": [  ],
+"text": "This city is cruel and difficult to live in.",
+"translation_key": "This city is cruel and difficult to live in.",
+"type": "dialogue"
+},
+"13": {
+"character": "Nikola",
+"character_replacements": [  ],
+"next_id": "15",
+"replacements": [  ],
 "text": "In a place like this you need something to keep you soul alive.",
-"time": null,
 "translation_key": "In a place like this you need something to keep you soul alive.",
 "type": "dialogue"
 },
-"14": {
+"15": {
 "mutation": {
 "expression": [ {
 "function": "_change_background",
@@ -181,24 +172,19 @@ lines = {
 } ] ]
 } ]
 },
-"next_id": "15",
+"next_id": "16",
 "type": "mutation"
 },
-"15": {
+"16": {
 "character": "Nikola",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "16",
-"pauses": {
-},
+"next_id": "17",
 "replacements": [  ],
-"speeds": [  ],
 "text": "You need a life objective.",
-"time": null,
 "translation_key": "You need a life objective.",
 "type": "dialogue"
 },
-"16": {
+"17": {
 "mutation": {
 "expression": [ {
 "function": "_change_background",
@@ -209,24 +195,19 @@ lines = {
 } ] ]
 } ]
 },
-"next_id": "17",
+"next_id": "18",
 "type": "mutation"
 },
-"17": {
+"18": {
 "character": "Nikola",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "18",
-"pauses": {
-},
+"next_id": "19",
 "replacements": [  ],
-"speeds": [  ],
 "text": "Or a lover.",
-"time": null,
 "translation_key": "Or a lover.",
 "type": "dialogue"
 },
-"18": {
+"19": {
 "mutation": {
 "expression": [ {
 "function": "_change_background",
@@ -237,22 +218,8 @@ lines = {
 } ] ]
 } ]
 },
-"next_id": "19",
-"type": "mutation"
-},
-"19": {
-"character": "Nikola",
-"character_replacements": [  ],
-"inline_mutations": [  ],
 "next_id": "20",
-"pauses": {
-},
-"replacements": [  ],
-"speeds": [  ],
-"text": "But for me is Cheesecake, that keeps my mind sane.",
-"time": null,
-"translation_key": "But for me is Cheesecake, that keeps my mind sane.",
-"type": "dialogue"
+"type": "mutation"
 },
 "2": {
 "mutation": {
@@ -268,32 +235,31 @@ lines = {
 "20": {
 "character": "Nikola",
 "character_replacements": [  ],
-"inline_mutations": [  ],
 "next_id": "21",
-"pauses": {
-},
 "replacements": [  ],
-"speeds": [  ],
-"text": "I'm in love with cheesecakes, at the end of the day it's the only reason I'm alive.",
-"time": null,
-"translation_key": "I'm in love with cheesecakes, at the end of the day it's the only reason I'm alive.",
+"text": "But for me is Cheesecake, that keeps my mind sane.",
+"translation_key": "But for me is Cheesecake, that keeps my mind sane.",
 "type": "dialogue"
 },
 "21": {
 "character": "Nikola",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "23",
-"pauses": {
-},
+"next_id": "22",
 "replacements": [  ],
-"speeds": [  ],
+"text": "I'm in love with cheesecakes, at the end of the day it's the only reason I'm alive.",
+"translation_key": "I'm in love with cheesecakes, at the end of the day it's the only reason I'm alive.",
+"type": "dialogue"
+},
+"22": {
+"character": "Nikola",
+"character_replacements": [  ],
+"next_id": "24",
+"replacements": [  ],
 "text": "And the reason I protect this city, just to taste the delicious crust and filling that my beloved dessert has to offer.",
-"time": null,
 "translation_key": "And the reason I protect this city, just to taste the delicious crust and filling that my beloved dessert has to offer.",
 "type": "dialogue"
 },
-"23": {
+"24": {
 "mutation": {
 "expression": [ {
 "function": "_change_background",
@@ -304,24 +270,19 @@ lines = {
 } ] ]
 } ]
 },
-"next_id": "24",
+"next_id": "25",
 "type": "mutation"
 },
-"24": {
+"25": {
 "character": "Mystical Voice",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "25",
-"pauses": {
-},
+"next_id": "26",
 "replacements": [  ],
-"speeds": [  ],
 "text": "On the supermarket...",
-"time": null,
 "translation_key": "On the supermarket...",
 "type": "dialogue"
 },
-"25": {
+"26": {
 "mutation": {
 "expression": [ {
 "function": "_change_background",
@@ -332,24 +293,19 @@ lines = {
 } ] ]
 } ]
 },
-"next_id": "26",
+"next_id": "27",
 "type": "mutation"
 },
-"26": {
+"27": {
 "character": "Mystical Voice",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "27",
-"pauses": {
-},
+"next_id": "28",
 "replacements": [  ],
-"speeds": [  ],
 "text": "The detective rushes to the dessert zone. Only to discover that his favorite dessert is missing.",
-"time": null,
 "translation_key": "The detective rushes to the dessert zone. Only to discover that his favorite dessert is missing.",
 "type": "dialogue"
 },
-"27": {
+"28": {
 "mutation": {
 "expression": [ {
 "function": "_change_background",
@@ -360,20 +316,15 @@ lines = {
 } ] ]
 } ]
 },
-"next_id": "28",
+"next_id": "29",
 "type": "mutation"
 },
-"28": {
+"29": {
 "character": "Mystical Voice",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "30",
-"pauses": {
-},
+"next_id": "31",
 "replacements": [  ],
-"speeds": [  ],
 "text": "He runs to the first employee he founds.",
-"time": null,
 "translation_key": "He runs to the first employee he founds.",
 "type": "dialogue"
 },
@@ -388,49 +339,34 @@ lines = {
 "next_id": "4",
 "type": "mutation"
 },
-"30": {
+"31": {
 "character": "Staff from Stuff-Market",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "31",
-"pauses": {
-},
+"next_id": "32",
 "replacements": [  ],
-"speeds": [  ],
 "text": "Oh hi, Detective Nikola!, What do you need?",
-"time": null,
 "translation_key": "Oh hi, Detective Nikola!, What do you need?",
 "type": "dialogue"
 },
-"31": {
+"32": {
 "character": "Nikola",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "32",
-"pauses": {
-},
+"next_id": "33",
 "replacements": [  ],
-"speeds": [  ],
 "text": "Do you know what happened to the cheesecakes?",
-"time": null,
 "translation_key": "Do you know what happened to the cheesecakes?",
 "type": "dialogue"
 },
-"32": {
+"33": {
 "character": "Staff from Stuff-Market",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "34",
-"pauses": {
-},
+"next_id": "35",
 "replacements": [  ],
-"speeds": [ [ 0, 0.2 ], [ 4, 0.5 ], [ 19, 1.0 ] ],
-"text": "...  Oh! You silly , what kind of joke are you trying to pull out?",
-"time": null,
-"translation_key": "...  Oh! You silly , what kind of joke are you trying to pull out?",
+"text": "[speed=0.2]... [speed=0.5] Oh! You silly [speed=1], what kind of joke are you trying to pull out?",
+"translation_key": "[speed=0.2]... [speed=0.5] Oh! You silly [speed=1], what kind of joke are you trying to pull out?",
 "type": "dialogue"
 },
-"34": {
+"35": {
 "mutation": {
 "expression": [ {
 "function": "_change_background",
@@ -441,24 +377,19 @@ lines = {
 } ] ]
 } ]
 },
-"next_id": "35",
+"next_id": "36",
 "type": "mutation"
 },
-"35": {
+"36": {
 "character": "Nikola",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "36",
-"pauses": {
-},
+"next_id": "37",
 "replacements": [  ],
-"speeds": [  ],
 "text": "What is happening?",
-"time": null,
 "translation_key": "What is happening?",
 "type": "dialogue"
 },
-"36": {
+"37": {
 "mutation": {
 "expression": [ {
 "function": "_change_background",
@@ -469,36 +400,17 @@ lines = {
 } ] ]
 } ]
 },
-"next_id": "37",
+"next_id": "38",
 "type": "mutation"
 },
-"37": {
+"38": {
 "character": "Mystical Voice",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "39",
-"pauses": {
-},
+"next_id": "40",
 "replacements": [  ],
-"speeds": [  ],
 "text": "The detective, confused, exits the supermarket.",
-"time": null,
 "translation_key": "The detective, confused, exits the supermarket.",
 "type": "dialogue"
-},
-"39": {
-"mutation": {
-"expression": [ {
-"function": "_change_background",
-"type": "function",
-"value": [ [ {
-"type": "string",
-"value": "res://Assets/media/intro/fotograma0327.png"
-} ] ]
-} ]
-},
-"next_id": "40",
-"type": "mutation"
 },
 "4": {
 "mutation": {
@@ -515,20 +427,29 @@ lines = {
 "type": "mutation"
 },
 "40": {
+"mutation": {
+"expression": [ {
+"function": "_change_background",
+"type": "function",
+"value": [ [ {
+"type": "string",
+"value": "res://Assets/media/intro/fotograma0327.png"
+} ] ]
+} ]
+},
+"next_id": "41",
+"type": "mutation"
+},
+"41": {
 "character": "Mystical Voice",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "42",
-"pauses": {
-},
+"next_id": "43",
 "replacements": [  ],
-"speeds": [  ],
 "text": "He runs to the nearest dessert store.",
-"time": null,
 "translation_key": "He runs to the nearest dessert store.",
 "type": "dialogue"
 },
-"42": {
+"43": {
 "mutation": {
 "expression": [ {
 "function": "_change_background",
@@ -539,38 +460,28 @@ lines = {
 } ] ]
 } ]
 },
-"next_id": "43",
+"next_id": "44",
 "type": "mutation"
 },
-"43": {
+"44": {
 "character": "Nikola",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "44",
-"pauses": {
-},
+"next_id": "45",
 "replacements": [  ],
-"speeds": [  ],
 "text": "Excuse me, where is the cheesecake section?",
-"time": null,
 "translation_key": "Excuse me, where is the cheesecake section?",
 "type": "dialogue"
 },
-"44": {
+"45": {
 "character": "Employee",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "46",
-"pauses": {
-},
+"next_id": "47",
 "replacements": [  ],
-"speeds": [  ],
 "text": "I'm sorry sir, but there's not such thing in this store.",
-"time": null,
 "translation_key": "I'm sorry sir, but there's not such thing in this store.",
 "type": "dialogue"
 },
-"46": {
+"47": {
 "mutation": {
 "expression": [ {
 "function": "_change_background",
@@ -581,36 +492,17 @@ lines = {
 } ] ]
 } ]
 },
-"next_id": "47",
+"next_id": "48",
 "type": "mutation"
 },
-"47": {
+"48": {
 "character": "Mystical Voice",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "49",
-"pauses": {
-},
+"next_id": "50",
 "replacements": [  ],
-"speeds": [  ],
 "text": "Once again he goes out, as a last resource he drives  to the Cheesecake Factory, without realising that the sign now says Kuchen Factory.",
-"time": null,
 "translation_key": "Once again he goes out, as a last resource he drives  to the Cheesecake Factory, without realising that the sign now says Kuchen Factory.",
 "type": "dialogue"
-},
-"49": {
-"mutation": {
-"expression": [ {
-"function": "_change_background",
-"type": "function",
-"value": [ [ {
-"type": "string",
-"value": "res://Assets/media/intro/fotograma0447.png"
-} ] ]
-} ]
-},
-"next_id": "50",
-"type": "mutation"
 },
 "5": {
 "mutation": {
@@ -623,122 +515,87 @@ lines = {
 } ] ]
 } ]
 },
-"next_id": "6",
+"next_id": "7",
 "type": "mutation"
 },
 "50": {
-"character": "'Cheesecake' Factory Employee",
-"character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "51",
-"pauses": {
+"mutation": {
+"expression": [ {
+"function": "_change_background",
+"type": "function",
+"value": [ [ {
+"type": "string",
+"value": "res://Assets/media/intro/fotograma0447.png"
+} ] ]
+} ]
 },
-"replacements": [  ],
-"speeds": [  ],
-"text": "Hello, sir. How may I help you?",
-"time": null,
-"translation_key": "Hello, sir. How may I help you?",
-"type": "dialogue"
+"next_id": "51",
+"type": "mutation"
 },
 "51": {
-"character": "Nikola",
+"character": "'Cheesecake' Factory Employee",
 "character_replacements": [  ],
-"inline_mutations": [  ],
 "next_id": "52",
-"pauses": {
-},
 "replacements": [  ],
-"speeds": [  ],
-"text": "Well, for some reason, there seems to be no cheesecakes in this city, so I came to the only place that...",
-"time": null,
-"translation_key": "Well, for some reason, there seems to be no cheesecakes in this city, so I came to the only place that...",
+"text": "Hello, sir. How may I help you?",
+"translation_key": "Hello, sir. How may I help you?",
 "type": "dialogue"
 },
 "52": {
 "character": "Nikola",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "54",
-"pauses": {
-},
+"next_id": "53",
 "replacements": [  ],
-"speeds": [ [ 0, 0.5 ] ],
-"text": "...",
-"time": null,
-"translation_key": "...",
+"text": "Well, for some reason, there seems to be no cheesecakes in this city, so I came to the only place that...",
+"translation_key": "Well, for some reason, there seems to be no cheesecakes in this city, so I came to the only place that...",
 "type": "dialogue"
 },
-"54": {
+"53": {
+"character": "Nikola",
+"character_replacements": [  ],
+"next_id": "55",
+"replacements": [  ],
+"text": "[speed=0.5]...",
+"translation_key": "[speed=0.5]...",
+"type": "dialogue"
+},
+"55": {
 "character": "Mystical Voice",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "56",
-"pauses": {
-},
+"next_id": "57",
 "replacements": [  ],
-"speeds": [  ],
 "text": "Nikola stops talking, he noticed the worker had a hat with the name Kuchen Factory on it.",
-"time": null,
 "translation_key": "Nikola stops talking, he noticed the worker had a hat with the name Kuchen Factory on it.",
 "type": "dialogue"
 },
-"56": {
+"57": {
 "character": "Nikola",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "57",
-"pauses": {
-},
+"next_id": "58",
 "replacements": [  ],
-"speeds": [  ],
 "text": "Sorry, What do you sell here?",
-"time": null,
 "translation_key": "Sorry, What do you sell here?",
 "type": "dialogue"
 },
-"57": {
+"58": {
 "character": "'Cheesecake' Factory Employee",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "58",
-"pauses": {
-},
+"next_id": "59",
 "replacements": [  ],
-"speeds": [  ],
 "text": "Well, I mean kuchens *laughs*.",
-"time": null,
 "translation_key": "Well, I mean kuchens *laughs*.",
 "type": "dialogue"
 },
-"58": {
+"59": {
 "character": "Nikola",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "60",
-"pauses": {
-},
+"next_id": "61",
 "replacements": [  ],
-"speeds": [  ],
 "text": "Right, dumb thing to ask. I apologize.",
-"time": null,
 "translation_key": "Right, dumb thing to ask. I apologize.",
 "type": "dialogue"
 },
-"6": {
-"character": "Nikola",
-"character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "7",
-"pauses": {
-},
-"replacements": [  ],
-"speeds": [  ],
-"text": "I live in the city of Chimera.",
-"time": null,
-"translation_key": "I live in the city of Chimera.",
-"type": "dialogue"
-},
-"60": {
+"61": {
 "mutation": {
 "expression": [ {
 "function": "_change_background",
@@ -749,24 +606,19 @@ lines = {
 } ] ]
 } ]
 },
-"next_id": "61",
+"next_id": "62",
 "type": "mutation"
 },
-"61": {
+"62": {
 "character": "Mystical Voice",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "63",
-"pauses": {
-},
+"next_id": "64",
 "replacements": [  ],
-"speeds": [  ],
 "text": "At Nikola's House",
-"time": null,
 "translation_key": "At Nikola's House",
 "type": "dialogue"
 },
-"63": {
+"64": {
 "mutation": {
 "expression": [ {
 "function": "_change_background",
@@ -777,24 +629,13 @@ lines = {
 } ] ]
 } ]
 },
-"next_id": "64",
-"type": "mutation"
-},
-"64": {
-"mutation": {
-"expression": [ {
-"function": "_mom_in",
-"type": "function",
-"value": [  ]
-} ]
-},
 "next_id": "65",
 "type": "mutation"
 },
 "65": {
 "mutation": {
 "expression": [ {
-"function": "_nikola_in",
+"function": "_mom_in",
 "type": "function",
 "value": [  ]
 } ]
@@ -803,76 +644,62 @@ lines = {
 "type": "mutation"
 },
 "66": {
+"mutation": {
+"expression": [ {
+"function": "_nikola_in",
+"type": "function",
+"value": [  ]
+} ]
+},
+"next_id": "67",
+"type": "mutation"
+},
+"67": {
 "character": "Nikola",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "67",
-"pauses": {
-},
+"next_id": "68",
 "replacements": [  ],
-"speeds": [  ],
 "text": "Hi mom, How is everyone in Poland doing?",
-"time": null,
 "translation_key": "Hi mom, How is everyone in Poland doing?",
 "type": "dialogue"
 },
-"67": {
+"68": {
 "character": "Mom",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "68",
-"pauses": {
-},
+"next_id": "69",
 "replacements": [  ],
-"speeds": [  ],
 "text": "Everything is wonderful my dear, but is something wrong I hear you troubled.",
-"time": null,
 "translation_key": "Everything is wonderful my dear, but is something wrong I hear you troubled.",
 "type": "dialogue"
 },
-"68": {
+"69": {
 "character": "Nikola",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "69",
-"pauses": {
-},
-"replacements": [  ],
-"speeds": [  ],
-"text": "Mom… Could you send me some of your famous Sernik?",
-"time": null,
-"translation_key": "Mom… Could you send me some of your famous Sernik?",
-"type": "dialogue"
-},
-"69": {
-"character": "Mom",
-"character_replacements": [  ],
-"inline_mutations": [  ],
 "next_id": "70",
-"pauses": {
-},
 "replacements": [  ],
-"speeds": [  ],
-"text": "Im sorry dear I don't know what sernik is, is this one of your gaslighting jokes?",
-"time": null,
-"translation_key": "Im sorry dear I don't know what sernik is, is this one of your gaslighting jokes?",
+"text": "Mom… Could you send me some of your famous Sernik?",
+"translation_key": "Mom… Could you send me some of your famous Sernik?",
 "type": "dialogue"
 },
 "7": {
 "character": "Nikola",
 "character_replacements": [  ],
-"inline_mutations": [  ],
 "next_id": "8",
-"pauses": {
-},
 "replacements": [  ],
-"speeds": [  ],
-"text": "A not so well known city in the state of New York.",
-"time": null,
-"translation_key": "A not so well known city in the state of New York.",
+"text": "I live in the city of Chimera.",
+"translation_key": "I live in the city of Chimera.",
 "type": "dialogue"
 },
 "70": {
+"character": "Mom",
+"character_replacements": [  ],
+"next_id": "71",
+"replacements": [  ],
+"text": "Im sorry dear I don't know what sernik is, is this one of your gaslighting jokes?",
+"translation_key": "Im sorry dear I don't know what sernik is, is this one of your gaslighting jokes?",
+"type": "dialogue"
+},
+"71": {
 "mutation": {
 "expression": [ {
 "function": "_change_nikola_expression",
@@ -883,24 +710,19 @@ lines = {
 } ] ]
 } ]
 },
-"next_id": "71",
+"next_id": "72",
 "type": "mutation"
 },
-"71": {
+"72": {
 "character": "Nikola",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "72",
-"pauses": {
-},
+"next_id": "73",
 "replacements": [  ],
-"speeds": [  ],
 "text": "Haha yeah… You caught me mom, Bye.",
-"time": null,
 "translation_key": "Haha yeah… You caught me mom, Bye.",
 "type": "dialogue"
 },
-"72": {
+"73": {
 "mutation": {
 "expression": [ {
 "function": "_change_nikola_expression",
@@ -911,24 +733,19 @@ lines = {
 } ] ]
 } ]
 },
-"next_id": "73",
+"next_id": "74",
 "type": "mutation"
 },
-"73": {
+"74": {
 "character": "Mom",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "74",
-"pauses": {
-},
+"next_id": "75",
 "replacements": [  ],
-"speeds": [  ],
 "text": "Good bye, my love.",
-"time": null,
 "translation_key": "Good bye, my love.",
 "type": "dialogue"
 },
-"74": {
+"75": {
 "mutation": {
 "expression": [ {
 "function": "_mom_out",
@@ -936,10 +753,10 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "75",
+"next_id": "76",
 "type": "mutation"
 },
-"75": {
+"76": {
 "mutation": {
 "expression": [ {
 "function": "_nikola_out",
@@ -947,10 +764,10 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "77",
+"next_id": "78",
 "type": "mutation"
 },
-"77": {
+"78": {
 "mutation": {
 "expression": [ {
 "function": "_change_background",
@@ -961,52 +778,37 @@ lines = {
 } ] ]
 } ]
 },
-"next_id": "78",
-"type": "mutation"
-},
-"78": {
-"character": "Mystical Voice",
-"character_replacements": [  ],
-"inline_mutations": [  ],
 "next_id": "79",
-"pauses": {
-},
-"replacements": [  ],
-"speeds": [  ],
-"text": "Nikola, clearly exhausted, ends the call, goes to sleep with the lasting soul he has.",
-"time": null,
-"translation_key": "Nikola, clearly exhausted, ends the call, goes to sleep with the lasting soul he has.",
-"type": "dialogue"
+"type": "mutation"
 },
 "79": {
 "character": "Mystical Voice",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "81",
-"pauses": {
-},
+"next_id": "80",
 "replacements": [  ],
-"speeds": [  ],
-"text": "He sleeps all night dreaming about cheesecakes.",
-"time": null,
-"translation_key": "He sleeps all night dreaming about cheesecakes.",
+"text": "Nikola, clearly exhausted, ends the call, goes to sleep with the lasting soul he has.",
+"translation_key": "Nikola, clearly exhausted, ends the call, goes to sleep with the lasting soul he has.",
 "type": "dialogue"
 },
 "8": {
 "character": "Nikola",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "10",
-"pauses": {
-},
+"next_id": "9",
 "replacements": [  ],
-"speeds": [  ],
-"text": "I'm a detective and my name is Nikola.",
-"time": null,
-"translation_key": "I'm a detective and my name is Nikola.",
+"text": "A not so well known city in the state of New York.",
+"translation_key": "A not so well known city in the state of New York.",
 "type": "dialogue"
 },
-"81": {
+"80": {
+"character": "Mystical Voice",
+"character_replacements": [  ],
+"next_id": "82",
+"replacements": [  ],
+"text": "He sleeps all night dreaming about cheesecakes.",
+"translation_key": "He sleeps all night dreaming about cheesecakes.",
+"type": "dialogue"
+},
+"82": {
 "mutation": {
 "expression": [ {
 "function": "_change_background",
@@ -1017,10 +819,10 @@ lines = {
 } ] ]
 } ]
 },
-"next_id": "82",
+"next_id": "83",
 "type": "mutation"
 },
-"82": {
+"83": {
 "mutation": {
 "expression": [ {
 "function": "_soul_bar_in",
@@ -1028,10 +830,10 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "83",
+"next_id": "84",
 "type": "mutation"
 },
-"83": {
+"84": {
 "mutation": {
 "expression": [ {
 "function": "_nikola_in",
@@ -1039,69 +841,57 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "85",
+"next_id": "86",
 "type": "mutation"
 },
-"85": {
+"86": {
 "character": "Mystical Voice",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "86",
-"pauses": {
-},
+"next_id": "87",
 "replacements": [  ],
-"speeds": [  ],
 "text": "Nikola awakes, he has two options.",
-"time": null,
 "translation_key": "Nikola awakes, he has two options.",
 "type": "dialogue"
 },
-"86": {
-"next_id": "90",
+"87": {
+"next_id": "91",
 "next_id_after": "end!",
 "replacements": [  ],
-"responses": PoolStringArray( "86", "87" ),
+"responses": PoolStringArray( "87", "88" ),
 "text": "Forget the cheesecakes forever.",
 "translation_key": "Forget the cheesecakes forever.",
 "type": "response"
 },
-"87": {
-"next_id": "97",
+"88": {
+"next_id": "98",
 "next_id_after": "end!",
 "replacements": [  ],
 "text": "Investigate the dissapearence of the cheesecakes.",
 "translation_key": "Investigate the dissapearence of the cheesecakes.",
 "type": "response"
 },
-"89": {
-"next_id": "90",
+"9": {
+"character": "Nikola",
+"character_replacements": [  ],
+"next_id": "11",
+"replacements": [  ],
+"text": "I'm a detective and my name is Nikola.",
+"translation_key": "I'm a detective and my name is Nikola.",
+"type": "dialogue"
+},
+"90": {
+"next_id": "91",
 "text": "forget",
 "type": "title"
 },
-"90": {
+"91": {
 "character": "Mystical Voice",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "91",
-"pauses": {
-},
+"next_id": "92",
 "replacements": [  ],
-"speeds": [  ],
 "text": "You lost.",
-"time": null,
 "translation_key": "You lost.",
 "type": "dialogue"
-},
-"91": {
-"mutation": {
-"expression": [ {
-"function": "_soul_down",
-"type": "function",
-"value": [  ]
-} ]
-},
-"next_id": "92",
-"type": "mutation"
 },
 "92": {
 "mutation": {
@@ -1133,29 +923,35 @@ lines = {
 "value": [  ]
 } ]
 },
+"next_id": "95",
+"type": "mutation"
+},
+"95": {
+"mutation": {
+"expression": [ {
+"function": "_soul_down",
+"type": "function",
+"value": [  ]
+} ]
+},
 "next_id": "",
 "type": "mutation"
 },
-"96": {
-"next_id": "97",
+"97": {
+"next_id": "98",
 "text": "one",
 "type": "title"
 },
-"97": {
+"98": {
 "character": "Nikola",
 "character_replacements": [  ],
-"inline_mutations": [  ],
-"next_id": "98",
-"pauses": {
-},
+"next_id": "99",
 "replacements": [  ],
-"speeds": [  ],
 "text": "I need to go to the station!",
-"time": null,
 "translation_key": "I need to go to the station!",
 "type": "dialogue"
 },
-"98": {
+"99": {
 "mutation": {
 "expression": [ {
 "function": "_soul_bar_out",

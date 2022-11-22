@@ -1,10 +1,10 @@
-extends Node2D
+extends Control
 
-onready var pause = $MarginContainer/VBoxContainer/Pause
-onready var main_menu = $MarginContainer/VBoxContainer/MainMenu
+onready var resume = $"%Resume"
+onready var main_menu = $"%MainMenu"
 
 func _ready():
-	pause.connect("pressed", self, "_on_pause_pressed")
+	resume.connect("pressed", self, "_on_resume_pressed")
 	main_menu.connect("pressed", self, "_on_main_menu_pressed")
 	visible = false
 
@@ -13,8 +13,8 @@ func _input(event):
 		visible = !visible
 		get_tree().paused = visible
 
-func _on_pause_pressed():
-	get_tree().pause = false
+func _on_resume_pressed():
+	get_tree().paused = false
 	visible = false
 
 func _on_main_menu_pressed():

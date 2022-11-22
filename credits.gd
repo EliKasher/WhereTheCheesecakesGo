@@ -1,6 +1,6 @@
 extends Node2D
 
-onready var back = $MarginContainer/VBoxContainer/Back
+onready var back = $"%Back"
 var credits = [
 	{"name": "",
 	"author": ""}
@@ -11,7 +11,6 @@ func _ready():
 	for credit in credits:
 		var h_separator = HSeparator.new()
 		h_separator.theme_type_variation = "SmallHSeparator"
-		credits_container.add_child(h_separator)
 		var name_label = _create_label(credit.name)
 		var author_label = _create_label(credit.author)
 		
