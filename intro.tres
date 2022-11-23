@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 67
+resource_version = 69
 syntax_version = 2
 raw_text = "~ intro
 do _mom_out()
@@ -105,10 +105,32 @@ do _soul_down()
 
 ~ one
 Nikola: I need to go to the station! 
-do _soul_bar_out()"
+do _soul_bar_out()
+Mystical Voice: Nikola travels to the Police Station.
+Mystical Voice: He works hard as always and as he leaves he meets his boss.
+Boss: Nikola, wait, Where are you going so  quickly? Did you find a new case to investigate?
+Nikola: (I can't tell him about the cheesecakes. He'll think I'm crazy and won't let me work, I need a lie, quickly!).
+- I need to investigate our mayor, I think He's stealing funds for prison renovations.  => government
+- The restaurant chains have quadrupled their earnings from last year. I think they're inflating the prices between them. => food
+- There's been a lot of disturbance in the streets after the CIA released those UFO documents to the public. I wanna make sure they're not planning anything to disrupt the streets. => aliens
+
+~ government
+
+Boss: Okay Nikola, you know i trust you, keep me informed, see you later.
+
+~ food
+
+Boss: Okay Nikola, you know i trust you, keep me informed, see you later.
+
+~ aliens
+
+Boss: Okay Nikola, you know i trust you, keep me informed, see you later."
 errors = [  ]
 titles = {
+"aliens": "118",
+"food": "114",
 "forget": "91",
+"government": "110",
 "intro": "1",
 "one": "98"
 }
@@ -129,6 +151,72 @@ lines = {
 "next_id": "2",
 "type": "mutation"
 },
+"100": {
+"character": "Mystical Voice",
+"character_replacements": [  ],
+"next_id": "101",
+"replacements": [  ],
+"text": "Nikola travels to the Police Station.",
+"translation_key": "Nikola travels to the Police Station.",
+"type": "dialogue"
+},
+"101": {
+"character": "Mystical Voice",
+"character_replacements": [  ],
+"next_id": "102",
+"replacements": [  ],
+"text": "He works hard as always and as he leaves he meets his boss.",
+"translation_key": "He works hard as always and as he leaves he meets his boss.",
+"type": "dialogue"
+},
+"102": {
+"character": "Boss",
+"character_replacements": [  ],
+"next_id": "103",
+"replacements": [  ],
+"text": "Nikola, wait, Where are you going so  quickly? Did you find a new case to investigate?",
+"translation_key": "Nikola, wait, Where are you going so  quickly? Did you find a new case to investigate?",
+"type": "dialogue"
+},
+"103": {
+"character": "Nikola",
+"character_replacements": [  ],
+"next_id": "104",
+"replacements": [  ],
+"text": "(I can't tell him about the cheesecakes. He'll think I'm crazy and won't let me work, I need a lie, quickly!).",
+"translation_key": "(I can't tell him about the cheesecakes. He'll think I'm crazy and won't let me work, I need a lie, quickly!).",
+"type": "dialogue"
+},
+"104": {
+"next_id": "110",
+"next_id_after": "end!",
+"replacements": [  ],
+"responses": PoolStringArray( "104", "105", "106" ),
+"text": "I need to investigate our mayor, I think He's stealing funds for prison renovations.",
+"translation_key": "I need to investigate our mayor, I think He's stealing funds for prison renovations.",
+"type": "response"
+},
+"105": {
+"next_id": "114",
+"next_id_after": "end!",
+"replacements": [  ],
+"text": "The restaurant chains have quadrupled their earnings from last year. I think they're inflating the prices between them.",
+"translation_key": "The restaurant chains have quadrupled their earnings from last year. I think they're inflating the prices between them.",
+"type": "response"
+},
+"106": {
+"next_id": "118",
+"next_id_after": "end!",
+"replacements": [  ],
+"text": "There's been a lot of disturbance in the streets after the CIA released those UFO documents to the public. I wanna make sure they're not planning anything to disrupt the streets.",
+"translation_key": "There's been a lot of disturbance in the streets after the CIA released those UFO documents to the public. I wanna make sure they're not planning anything to disrupt the streets.",
+"type": "response"
+},
+"108": {
+"next_id": "110",
+"text": "government",
+"type": "title"
+},
 "11": {
 "mutation": {
 "expression": [ {
@@ -142,6 +230,43 @@ lines = {
 },
 "next_id": "12",
 "type": "mutation"
+},
+"110": {
+"character": "Boss",
+"character_replacements": [  ],
+"next_id": "",
+"replacements": [  ],
+"text": "Okay Nikola, you know i trust you, keep me informed, see you later.",
+"translation_key": "Okay Nikola, you know i trust you, keep me informed, see you later.",
+"type": "dialogue"
+},
+"112": {
+"next_id": "114",
+"text": "food",
+"type": "title"
+},
+"114": {
+"character": "Boss",
+"character_replacements": [  ],
+"next_id": "",
+"replacements": [  ],
+"text": "Okay Nikola, you know i trust you, keep me informed, see you later.",
+"translation_key": "Okay Nikola, you know i trust you, keep me informed, see you later.",
+"type": "dialogue"
+},
+"116": {
+"next_id": "118",
+"text": "aliens",
+"type": "title"
+},
+"118": {
+"character": "Boss",
+"character_replacements": [  ],
+"next_id": "",
+"replacements": [  ],
+"text": "Okay Nikola, you know i trust you, keep me informed, see you later.",
+"translation_key": "Okay Nikola, you know i trust you, keep me informed, see you later.",
+"type": "dialogue"
 },
 "12": {
 "character": "Nikola",
@@ -959,7 +1084,7 @@ lines = {
 "value": [  ]
 } ]
 },
-"next_id": "",
+"next_id": "100",
 "type": "mutation"
 }
 }
