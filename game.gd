@@ -10,6 +10,14 @@ var nikola_expression = preload("res://Assets/media/nikola.png") setget set_niko
 
 var background = preload("res://Assets/media/intro/fotograma0000.png") setget set_background
 
+var Q1 = false
+var Q2 = false
+var Q3 = false
+var clue = false
+var E1 = false
+var E2 = false
+var E3 = false
+
 func set_soul(value):
 	soul = value
 	emit_signal("soul_changed", soul)

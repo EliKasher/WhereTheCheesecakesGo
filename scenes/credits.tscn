@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://credits.gd" type="Script" id=1]
 [ext_resource path="res://Assets/fonts/monogram/ttf/monogram.ttf" type="DynamicFontData" id=2]
@@ -28,6 +28,24 @@ font_data = ExtResource( 2 )
 
 [sub_resource type="Theme" id=6]
 default_font = SubResource( 5 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 64
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="Theme" id=12]
+default_font = SubResource( 11 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 64
+outline_size = 2
+outline_color = Color( 0.0588235, 0.0509804, 0.0509804, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="Theme" id=14]
+default_font = SubResource( 13 )
 
 [sub_resource type="StyleBoxTexture" id=9]
 texture = ExtResource( 5 )
@@ -67,44 +85,60 @@ margin_bottom = 1097.0
 alignment = 1
 
 [node name="HSeparator2" type="HSeparator" parent="Creditos/MarginContainer/VBoxContainer"]
-margin_top = 407.0
+margin_top = 352.0
 margin_right = 1932.0
-margin_bottom = 411.0
+margin_bottom = 356.0
 
 [node name="Creditmark" type="Label" parent="Creditos/MarginContainer/VBoxContainer"]
-margin_top = 415.0
+margin_top = 360.0
 margin_right = 1932.0
-margin_bottom = 517.0
+margin_bottom = 462.0
 theme = SubResource( 2 )
 text = "Credits"
 align = 1
 
 [node name="HSeparator" type="HSeparator" parent="Creditos/MarginContainer/VBoxContainer"]
-margin_top = 521.0
+margin_top = 466.0
 margin_right = 1932.0
-margin_bottom = 525.0
+margin_bottom = 470.0
 
 [node name="Name1" type="Label" parent="Creditos/MarginContainer/VBoxContainer"]
-margin_top = 529.0
+margin_top = 474.0
 margin_right = 1932.0
-margin_bottom = 580.0
+margin_bottom = 525.0
 theme = SubResource( 4 )
 text = "Evelyn Avila"
 align = 1
 
 [node name="Name2" type="Label" parent="Creditos/MarginContainer/VBoxContainer"]
-margin_top = 584.0
+margin_top = 529.0
 margin_right = 1932.0
-margin_bottom = 635.0
+margin_bottom = 580.0
 theme = SubResource( 6 )
 text = "Clemente Grass"
 align = 1
 
-[node name="Back" type="Button" parent="Creditos/MarginContainer/VBoxContainer"]
-unique_name_in_owner = true
+[node name="Fonts" type="Label" parent="Creditos/MarginContainer/VBoxContainer"]
+margin_top = 584.0
+margin_right = 1932.0
+margin_bottom = 635.0
+theme = SubResource( 12 )
+text = "Fonts: datagoblin"
+align = 1
+
+[node name="GUI" type="Label" parent="Creditos/MarginContainer/VBoxContainer"]
 margin_top = 639.0
 margin_right = 1932.0
 margin_bottom = 690.0
+theme = SubResource( 14 )
+text = "GUI: puppetbomb"
+align = 1
+
+[node name="Back" type="Button" parent="Creditos/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+margin_top = 694.0
+margin_right = 1932.0
+margin_bottom = 745.0
 theme = SubResource( 8 )
 text = "Back"
 icon_align = 1
@@ -113,6 +147,6 @@ icon_align = 1
 layer = 0
 
 [node name="Sprite" type="Sprite" parent="Background"]
-position = Vector2( 961, 553 )
-scale = Vector2( 1.33472, 1.21111 )
+position = Vector2( 961, 544 )
+scale = Vector2( 1.33472, 1.23111 )
 texture = ExtResource( 3 )

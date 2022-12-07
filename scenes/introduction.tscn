@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Assets/media/intro/mom.png" type="Texture" id=1]
 [ext_resource path="res://introduction.gd" type="Script" id=2]
@@ -6,7 +6,19 @@
 [ext_resource path="res://scenes/soul.tscn" type="PackedScene" id=4]
 [ext_resource path="res://detective.gd" type="Script" id=5]
 [ext_resource path="res://scenes/pause_menu.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/media/cat.png" type="Texture" id=7]
+[ext_resource path="res://Assets/media/boss.png" type="Texture" id=8]
+[ext_resource path="res://Assets/media/secretary.png" type="Texture" id=9]
+[ext_resource path="res://Assets/media/ddk.png" type="Texture" id=10]
+[ext_resource path="res://Assets/media/manager.png" type="Texture" id=11]
+[ext_resource path="res://Assets/media/hippie.png" type="Texture" id=12]
+[ext_resource path="res://Assets/media/kuchen_employee.png" type="Texture" id=13]
+[ext_resource path="res://Assets/media/gotic.png" type="Texture" id=14]
+[ext_resource path="res://Assets/media/mayor.png" type="Texture" id=15]
+[ext_resource path="res://Assets/media/kuchen_boss.png" type="Texture" id=16]
+[ext_resource path="res://Assets/media/aliens.png" type="Texture" id=17]
 [ext_resource path="res://Assets/media/intro/fotograma0000.png" type="Texture" id=18]
+[ext_resource path="res://Assets/media/scientist.png" type="Texture" id=19]
 [ext_resource path="res://background.gd" type="Script" id=20]
 
 [node name="Introduction" type="Node2D"]
@@ -29,15 +41,89 @@ __meta__ = {
 layer = 3
 
 [node name="Nikola" type="Sprite" parent="Characters"]
+unique_name_in_owner = true
 position = Vector2( 359.222, 740.729 )
 scale = Vector2( 0.943598, 0.903244 )
 texture = ExtResource( 3 )
 script = ExtResource( 5 )
 
 [node name="Mom" type="Sprite" parent="Characters"]
-position = Vector2( 1496.5, 757.5 )
+unique_name_in_owner = true
+position = Vector2( 1496.5, 758.5 )
 scale = Vector2( 0.105625, 0.121875 )
 texture = ExtResource( 1 )
+
+[node name="Cat" type="Sprite" parent="Characters"]
+unique_name_in_owner = true
+position = Vector2( 961, 749 )
+scale = Vector2( 0.308929, 0.302083 )
+texture = ExtResource( 7 )
+
+[node name="Boss" type="Sprite" parent="Characters"]
+unique_name_in_owner = true
+position = Vector2( 1489, 602 )
+scale = Vector2( 0.652174, 0.615 )
+texture = ExtResource( 8 )
+
+[node name="Secretary" type="Sprite" parent="Characters"]
+unique_name_in_owner = true
+position = Vector2( 1400.5, 608 )
+scale = Vector2( 0.648693, 0.577143 )
+texture = ExtResource( 9 )
+
+[node name="Ddk" type="Sprite" parent="Characters"]
+unique_name_in_owner = true
+position = Vector2( 1316.5, 562 )
+scale = Vector2( 0.669381, 0.608571 )
+texture = ExtResource( 10 )
+
+[node name="Manager" type="Sprite" parent="Characters"]
+unique_name_in_owner = true
+position = Vector2( 1265, 557.5 )
+scale = Vector2( 0.643068, 0.582143 )
+texture = ExtResource( 11 )
+
+[node name="Mayor" type="Sprite" parent="Characters"]
+unique_name_in_owner = true
+position = Vector2( 1472, 609.5 )
+scale = Vector2( 0.566757, 0.600714 )
+texture = ExtResource( 15 )
+
+[node name="Kuchen Employee" type="Sprite" parent="Characters"]
+unique_name_in_owner = true
+position = Vector2( 1553.5, 599.5 )
+scale = Vector2( 0.497347, 0.532143 )
+texture = ExtResource( 13 )
+
+[node name="Kuchen Boss" type="Sprite" parent="Characters"]
+unique_name_in_owner = true
+position = Vector2( 1602, 578 )
+scale = Vector2( 0.557292, 0.57 )
+texture = ExtResource( 16 )
+
+[node name="Hippie" type="Sprite" parent="Characters"]
+unique_name_in_owner = true
+position = Vector2( 1587, 629 )
+scale = Vector2( 0.553073, 0.552857 )
+texture = ExtResource( 12 )
+
+[node name="Gotic" type="Sprite" parent="Characters"]
+unique_name_in_owner = true
+position = Vector2( 1497.5, 592 )
+scale = Vector2( 0.607937, 0.577143 )
+texture = ExtResource( 14 )
+
+[node name="Aliens" type="Sprite" parent="Characters"]
+unique_name_in_owner = true
+position = Vector2( 1548.5, 582.5 )
+scale = Vector2( 0.546681, 0.549286 )
+texture = ExtResource( 17 )
+
+[node name="Scientist" type="Sprite" parent="Characters"]
+unique_name_in_owner = true
+position = Vector2( 1527, 604.5 )
+scale = Vector2( 0.559524, 0.532143 )
+texture = ExtResource( 19 )
 
 [node name="SoulBar" type="CanvasLayer" parent="."]
 layer = 3
@@ -58,6 +144,7 @@ scale = Vector2( 0.873478, 0.6953 )
 texture = ExtResource( 18 )
 
 [node name="Pause" type="CanvasLayer" parent="."]
+pause_mode = 2
 layer = 128
 
 [node name="PauseMenu" parent="Pause" instance=ExtResource( 6 )]
